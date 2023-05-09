@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -euxoH pipefail
-source /root/.bashrc > /dev/null 2>&1
+source ~/.bashrc > /dev/null 2>&1
 
-cd /root
+cd /Users/bmutziu
 rm -rf ${DEMO_HOME:?}
 cp -R ${SOLUTIONS_DIR:?}/02-generate-application-scaffolding ${DEMO_HOME:?}
