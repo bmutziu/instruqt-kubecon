@@ -1,9 +1,12 @@
 #!/bin/bash
 
 set -euxoH pipefail
-source /root/.bashrc > /dev/null 2>&1
+source ~/.bashrc > /dev/null 2>&1
 
-cd /root
+echo ${DEMO_HOME:?}
+echo ${SOLUTIONS_DIR:?}
+
+cd /Users/bmutziu
 rm -rf ${DEMO_HOME:?}
 cp -R ${SOLUTIONS_DIR:?}/01-get-to-know-the-platform ${DEMO_HOME:?}
 
