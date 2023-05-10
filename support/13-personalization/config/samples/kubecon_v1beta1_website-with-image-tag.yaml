@@ -1,0 +1,6 @@
+apiVersion: kubecon.bmutziu.me/v1beta1
+kind: Website
+metadata:
+  name: website-sample
+spec:
+  imageTag: latest
