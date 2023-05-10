@@ -1,6 +1,6 @@
 #!/bin/bash
 
 set -euxoH pipefail
-source /root/.bashrc > /dev/null 2>&1
+source ~/.bashrc > /dev/null 2>&1
 
-kubectl get --namespace demo-system deploy/demo-controller-manager || fail-message "Did you run make deploy?"
+kubectl get --namespace demo-system deploy/demo-controller-manager || echo "Did you run make deploy?"

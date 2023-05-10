@@ -90,7 +90,7 @@ kubectl --namespace demo-system get deployments
 
 With this operator deployed to Kubernetes you can now use it in the same way as when it was deployed locally.
 
-For example, create a new Website resource, or patch the existing one. The big difference is that to see te logs you need to use the following Kubernetes command:
+For example, create a new Website resource, or patch the existing one. The big difference is that to see the logs you need to use the following Kubernetes command:
 
 ```
 kubectl --namespace demo-system logs deploy/demo-controller-manager
@@ -101,7 +101,7 @@ kubectl --namespace demo-system logs deploy/demo-controller-manager
 
 Writing any code requires a lot of iteration and faster feedback is helpful. That is why you have been working with a local run command for the operator up until this point. This experience shows how the process of deploying to Kubernetes adds a lot of time. Both in the building and loading of the images and the creating of the pods.
 
-Despite this, the operator will need to run in Kubernetes in the long run. Using the `deploy` make command will allow you you to deploy and test your operator in a more realistic fashion. For example, the permissions you added for working with deployments and services are not required to run the operator locally. You can test this by removing them and watching `make run` work while `make deploy` will see a failing operator. This is because locally the operator depends on your personal permissions. But in the cluster it can only use its own permissions and would have failed without the additional Role Based Access Control (RBAC) that comment provided.
+Despite this, the operator will need to run in Kubernetes in the long run. Using the `deploy` make command will allow you to deploy and test your operator in a more realistic fashion. For example, the permissions you added for working with deployments and services are not required to run the operator locally. You can test this by removing them and watching `make run` work while `make deploy` will see a failing operator. This is because locally the operator depends on your personal permissions. But in the cluster it can only use its own permissions and would have failed without the additional Role Based Access Control (RBAC) that comment provided.
 
 🧞‍♀️ Some magic with local clusters
 ==============

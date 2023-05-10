@@ -2,12 +2,12 @@
 
 set -euxoH pipefail
 
-source /root/.bashrc > /dev/null 2>&1
+source ~/.bashrc > /dev/null 2>&1
 
 # Install docker
-dpkg -i ${SOLUTIONS_DIR:?}/track/docker-ce-cli_20.10.14~3-0~ubuntu-hirsute_amd64.deb 
-dpkg -i ${SOLUTIONS_DIR:?}/track/containerd.io_1.4.13-1_amd64.deb 
-dpkg -i ${SOLUTIONS_DIR:?}/track/docker-ce_20.10.14~3-0~ubuntu-hirsute_amd64.deb 
+#dpkg -i ${SOLUTIONS_DIR:?}/track/docker-ce-cli_20.10.14~3-0~ubuntu-hirsute_amd64.deb 
+#dpkg -i ${SOLUTIONS_DIR:?}/track/containerd.io_1.4.13-1_amd64.deb 
+#dpkg -i ${SOLUTIONS_DIR:?}/track/docker-ce_20.10.14~3-0~ubuntu-hirsute_amd64.deb 
 
 echo '
 resources:
